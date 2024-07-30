@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/My_Projects/Portfolio_Resume/style.css">
+    <title>My Portfolio</title>
+
+</head>
+
+<body>
+    <header>Mitchell Corbett</header>
+    <br>
+<section id='AboutME'>
+    <h2>About ME</h2>
+    <p>
+        I've always had a love for computers and how they work, and now is the time to make that passion a career. 
+        My name is Mitchell Corbett, and a couple of months ago, I decided to leave my dead-end (but comfortable) job to teach myself something new and start a career in tech.
+        Though it hasn't been easy, I have been making significant strides in the right direction and will undoubtedly finish this course with newfound knowledge and a job in tech. 
+        This portfolio will showcase everything I have learned so far and the skills I will acquire in the future.   
+    </p>
+</section>
+<br>
+<h3 >My Projects</h3>
+<div id="projects">
+    <img src="Resource/tea-cozy2.png" alt="Tea Cozy" class="pic">
+      <figcaption>The Coffee Shop</figcaption>
+    <img src="Resource/cheat_sheet.png" alt="CSS CheatSeet" class="pic">
+      <figcaption>Css Cheat Sheet</figcaption>
+    <img src="./Resource/suprme-wireless.png" alt="My Business" class="pic">
+      <figcaption>My Business</figcaption>
+    <img src="./Resource/das's_art.png" alt="Dasmoto's Arts" class="pic">
+      <figcaption>Dasmoto's Arts And Crafts</figcaption>
+  
+    
+    
+
+  </div>
+<h3>My Skills(So Far)</h3>
+<script>
+var i = 0;
+var images = [];
+var time = 3000;
+
+
+// Image list
+images[0] = './Resource/HTML5_logo.png'
+images[1] = './Resource/css.png'
+images[2] = './Resource/JavaScript-Logo.png'
+images[3] = './Resource/gitimages.png'
+images[4] = './Resource/github.png'
+
+
+changeImg=()=>{
+document.slide.src = images[i];
+if (i < images.length - 1){
+    i++
+}else{
+    i = 0;
+}
+setTimeout(changeImg, time);
+}
+
+window.onload = changeImg;
+</script>
+<img name="slide" width="400" height="200">
+
+</body>
+</html>
